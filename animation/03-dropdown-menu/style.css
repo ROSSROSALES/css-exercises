@@ -29,4 +29,22 @@ ul.dropdown-menu li:hover {
   display: block;
 }
 
+/* use animation like transition, animation needs key frames from{} to{} or percentages 0%{} 50%{} 100{}*/
+/* transform is a property, translate is a function */
+/* we use expand and scale to make the dropdown animation */
+.visible {
+  animation: expand 1.3s ease-in-out;
+  transform-origin: top;
+}
 
+@keyframes expand {
+  0% {
+    transform: scaleY(0);
+  }
+  70% {
+    transform: scaleY(1.1);
+  }
+  120% {
+    transform: scaleY(1);
+  }
+}

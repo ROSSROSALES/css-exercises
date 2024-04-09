@@ -61,3 +61,14 @@ button {
 .backdrop.show {
   opacity: 30%;
 }
+
+/* transition + transform: translate (x, y) coordinates */
+/* You can also transition a css property */
+.popup-modal {
+  transition: top 0.3s ease-in-out, opacity 0.3s ease;
+  top: 30%;
+}
+
+.popup-modal.show {
+  top: 50%;
+}

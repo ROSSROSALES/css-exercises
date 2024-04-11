@@ -1,4 +1,14 @@
+/* made changes to .header and .ul */
+/* display: flex, align-items == perpendiccular to main axis, main axis defaults left and right */
+/* the header needs it's children to left to right, and the ul's neeed to left and right */
+/* add the padding, margin, and gaps needed */
+
 .header  {
+  padding: 8px;
+  display: flex;
+  align-items: center; /* cross axis */
+  justify-content: space-between; /* main axis */
+  /* flex-direction: row; by  default flex-direction is row*/
   font-family: monospace;
   background: papayawhip;
 }
@@ -12,6 +22,10 @@
 }
 
 ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 8px;
   /* this removes the dots on the list items*/
   list-style-type: none;
 }

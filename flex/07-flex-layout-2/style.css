@@ -27,3 +27,65 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+/* my solution */
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 16px; /* up/down 0, left/right 16 */
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  /* min-width: 300px; */
+  flex-shrink: 0; /* since initial width already 300px */
+  padding: 16px;
+}
+
+ul {
+  list-style: none;
+  margin: 0; /* moves content closer to edge */
+  padding: 0;
+}
+
+li {
+  /* padding: 16px;  no need for padding all around*/ 
+  margin-bottom: 16px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+/* wrap didn't work initially because browser too small */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 32px;
+  gap: 32px;
+}
+
+.card {
+  width: 300px;
+  padding: 16px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
